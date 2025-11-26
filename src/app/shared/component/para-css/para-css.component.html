@@ -1,3 +1,22 @@
+
+<div class="form-group">
+    <label for="lowerCase">LowerCase</label>
+    <input
+    (keyup) = 'onClick($event)'
+    appLowercase class="form-control" id="lowerCase">
+</div>
+    
+<p *ngIf = 'val.length>0' class="alert alert-info">{{val}}</p>
+<br>
+<div class="form-group">
+    <label for="upperCase">UpperCase</label>
+    <input
+    (keyup) = 'onUpper($event)'
+    appUppercase class="form-control" id="upperCase">
+</div>
+    
+<p *ngIf = 'val2.length>0' class="alert alert-info">{{val2}}</p>
+<br>
 <p BasicCss1>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellat perferendis sed veritatis numquam rem enim
     et illo atque sint tempore obcaecati quia quasi, sapiente cum velit quo assumenda aliquid?
