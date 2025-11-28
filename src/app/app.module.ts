@@ -9,7 +9,10 @@ import { Highlighter3 } from './shared/directive/csshighlighter.directive';
 import { Highlighter4 } from './shared/directive/csshighlighter.directive';
 import { LowercaseDirective } from './shared/directive/lowercase.directive';
 import { UppercaseDirective } from './shared/directive/uppercase.directive';
-
+import { ContentProjectionComponent } from './shared/component/content-projection/content-projection.component';
+import { ContentMobileComponent } from './shared/component/content-mobile/content-mobile.component';
+import { PostsApiComponent } from './shared/component/posts-api/posts-api.component';
+import{HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,10 +23,14 @@ import { UppercaseDirective } from './shared/directive/uppercase.directive';
     Highlighter4,
     Highlighter5,
     LowercaseDirective,
-    UppercaseDirective
+    UppercaseDirective,
+    ContentProjectionComponent,
+    ContentMobileComponent,
+    PostsApiComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
